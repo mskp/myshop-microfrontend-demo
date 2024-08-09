@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "api": "cd api && bun dev",
+    "products-listing-app": "cd products-listing-app && bun dev --port 3001",
+    "cart-app": "cd cart-app && bun dev --port 3002",
+    "all": "concurrently \"bun run api\" \"bun run products-listing-app\" \"bun run cart-app\""
+  }
+}
